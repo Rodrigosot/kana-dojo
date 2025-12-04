@@ -140,7 +140,7 @@ const CollectionSelector = () => {
   return (
     <div className='flex flex-col'>
       {/* Modern Toggle-Style Unit Selector */}
-      <div className='flex rounded-tl-2xl rounded-tr-2xl bg-[var(--card-color)] border-b-1 border-[var(--border-color)] p-2 gap-1.5 flex-col md:flex-row'>
+      <div className='flex rounded-tl-2xl rounded-tr-2xl bg-[var(--card-color)] border-b-1 border-[var(--border-color)] p-4 gap-2 flex-col md:flex-row'>
         {collections.map(collection => {
           const isSelected = collection.name === selectedCollection;
 
@@ -187,7 +187,7 @@ const CollectionSelector = () => {
       {/* Selected Sets Info & Clear Button */}
       <div
         className={clsx(
-          'bg-[var(--card-color)] p-5 border-b-1 border-[var(--border-color)]',
+          'bg-[var(--card-color)] p-4 border-b-1 border-[var(--border-color)]',
           'w-full text-lg flex flex-col gap-2 items-start'
         )}
       >
@@ -217,7 +217,7 @@ const CollectionSelector = () => {
       </div>
 
       {/* Game Modes Section */}
-      <div className='flex rounded-bl-2xl rounded-br-2xl bg-[var(--card-color)] p-2 gap-1.5 flex-col md:flex-row'>
+      <div className='flex rounded-bl-2xl rounded-br-2xl bg-[var(--card-color)] p-4 gap-2 flex-col md:flex-row'>
         {gameModes.map(gameMode => {
           const isSelected = gameMode === selectedGameMode;
 
