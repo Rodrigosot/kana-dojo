@@ -153,11 +153,11 @@ module.exports = {
   // =============================================================================
   issueCreation: {
     theme: {
-      title: '🎨 Add Theme: {name}',
-      header: '## 🎨 Add New Theme: "{name}"',
+      title: '[Good First Issue] 🎨 Add New Color Theme: {name}',
+      header: '## 🎨 Add New Color Theme: "{name}"',
       category: 'Community Contribution - Theme',
-      difficulty: 'Easy',
-      estimatedTime: '15-20 minutes',
+      difficulty: 'Easy (good first issue)',
+      estimatedTime: '1 minute',
       taskDescription: 'Add this beautiful new theme to KanaDojo!',
       detailsHeader: '### Theme Details',
       vibeLabel: '💡 **Vibe:**',
@@ -173,11 +173,11 @@ module.exports = {
       footer: "**Questions?** Comment below and we'll help! 🙌"
     },
     fact: {
-      title: '🎋 Add Japan Fact #{id}',
+      title: '[Good First Issue] 🎋 Add Japan Fact #{id}',
       header: '## 🎋 Add New Japan Fact',
       category: 'Community Contribution - Fun Fact',
-      difficulty: 'Easy',
-      estimatedTime: '5-10 minutes',
+      difficulty: 'Easy (good first issue)',
+      estimatedTime: '1 minute',
       taskDescription:
         'Add this interesting fact about Japan to our collection!',
       factHeader: '### The Fact',
