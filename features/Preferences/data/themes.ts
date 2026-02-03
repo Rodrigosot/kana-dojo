@@ -273,7 +273,7 @@ function buildThemeGroup(baseGroup: BaseThemeGroup): ThemeGroup {
 // Base theme definitions - only id, backgroundColor, mainColor, secondaryColor
 const baseThemeSets: BaseThemeGroup[] = [
   {
-    name: 'Premium',
+    name: 'Premium (experimental, unstable)',
     icon: Sparkles,
     isLight: false,
     themes: [

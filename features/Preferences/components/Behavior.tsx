@@ -19,36 +19,36 @@ const Behavior = () => {
 
   // Pronunciation settings
   const pronunciationEnabled = usePreferencesStore(
-    state => state.pronunciationEnabled
+    state => state.pronunciationEnabled,
   );
   const setPronunciationEnabled = usePreferencesStore(
-    state => state.setPronunciationEnabled
+    state => state.setPronunciationEnabled,
   );
   const pronunciationSpeed = usePreferencesStore(
-    state => state.pronunciationSpeed
+    state => state.pronunciationSpeed,
   );
   const setPronunciationSpeed = usePreferencesStore(
-    state => state.setPronunciationSpeed
+    state => state.setPronunciationSpeed,
   );
   const pronunciationPitch = usePreferencesStore(
-    state => state.pronunciationPitch
+    state => state.pronunciationPitch,
   );
   const setPronunciationPitch = usePreferencesStore(
-    state => state.setPronunciationPitch
+    state => state.setPronunciationPitch,
   );
   const furiganaEnabled = usePreferencesStore(state => state.furiganaEnabled);
   const setFuriganaEnabled = usePreferencesStore(
-    state => state.setFuriganaEnabled
+    state => state.setFuriganaEnabled,
   );
   const themePreview = usePreferencesStore(state => state.themePreview);
   const setThemePreview = usePreferencesStore(state => state.setThemePreview);
 
   type Prefs = ReturnType<typeof usePreferencesStore.getState>;
   const pronunciationVoiceName = usePreferencesStore(
-    (state: Prefs) => state.pronunciationVoiceName
+    (state: Prefs) => state.pronunciationVoiceName,
   );
   const setPronunciationVoiceName = usePreferencesStore(
-    (state: Prefs) => state.setPronunciationVoiceName
+    (state: Prefs) => state.setPronunciationVoiceName,
   );
 
   const {
@@ -57,7 +57,7 @@ const Behavior = () => {
     setVoice,
     speak,
     refreshVoices,
-    hasJapaneseVoices
+    hasJapaneseVoices,
   } = useJapaneseTTS();
 
   /*   const hotkeysOn = useThemeStore(state => state.hotkeysOn);
@@ -82,7 +82,7 @@ const Behavior = () => {
             'text-center text-lg',
             'w-1/2 p-4 md:w-1/4',
             'text-(--secondary-color)',
-            'flex-1 overflow-hidden'
+            'flex-1 overflow-hidden',
           )}
           onClick={() => {
             playClick();
@@ -100,7 +100,7 @@ const Behavior = () => {
             'text-center text-lg',
             'w-1/2 p-4 md:w-1/4',
             'text-(--secondary-color)',
-            'flex-1 overflow-hidden'
+            'flex-1 overflow-hidden',
           )}
           onClick={() => {
             playClick();
@@ -124,7 +124,7 @@ const Behavior = () => {
             'w-1/2 p-4 md:w-1/4',
             'flex flex-row items-end justify-center gap-1.5',
             'text-(--secondary-color)',
-            'flex-1 overflow-hidden'
+            'flex-1 overflow-hidden',
           )}
           onClick={() => {
             playClick();
@@ -146,7 +146,7 @@ const Behavior = () => {
             'w-1/2 p-4 md:w-1/4',
             'flex flex-row items-end justify-center gap-1.5',
             'text-(--secondary-color)',
-            'flex-1 overflow-hidden'
+            'flex-1 overflow-hidden',
           )}
           onClick={() => {
             playClick();
@@ -171,7 +171,7 @@ const Behavior = () => {
             'w-1/2 p-4 md:w-1/4',
             'flex flex-row items-end justify-center gap-1.5',
             'text-(--secondary-color)',
-            'flex-1 overflow-hidden'
+            'flex-1 overflow-hidden',
           )}
           onClick={() => {
             playClick();
@@ -193,7 +193,7 @@ const Behavior = () => {
             'w-1/2 p-4 md:w-1/4',
             'flex flex-row items-end justify-center gap-1.5',
             'text-(--secondary-color)',
-            'flex-1 overflow-hidden'
+            'flex-1 overflow-hidden',
           )}
           onClick={() => {
             playClick();
@@ -219,7 +219,7 @@ const Behavior = () => {
             'w-1/2 p-4 md:w-1/4',
             'flex flex-row items-end justify-center gap-1.5',
             'text-(--secondary-color)',
-            'flex-1 overflow-hidden'
+            'flex-1 overflow-hidden',
           )}
           onClick={() => {
             playClick();
@@ -241,7 +241,7 @@ const Behavior = () => {
             'w-1/2 p-4 md:w-1/4',
             'flex flex-row items-end justify-center gap-1.5',
             'text-(--secondary-color)',
-            'flex-1 overflow-hidden'
+            'flex-1 overflow-hidden',
           )}
           onClick={() => {
             playClick();
@@ -260,7 +260,7 @@ const Behavior = () => {
 
       {pronunciationEnabled && (
         <>
-          <h4 className='text-lg'>Pronunciation speed:</h4>
+          {/* <h4 className='text-lg'>Pronunciation speed:</h4>
           <div className='flex flex-col gap-2'>
             <input
               type='range'
@@ -274,9 +274,9 @@ const Behavior = () => {
             <div className='text-center text-sm text-(--secondary-color)'>
               {pronunciationSpeed}x
             </div>
-          </div>
+          </div> */}
 
-          <h4 className='text-lg'>Pronunciation pitch:</h4>
+          {/* <h4 className='text-lg'>Pronunciation pitch:</h4>
           <div className='flex flex-col gap-2'>
             <input
               type='range'
@@ -290,9 +290,9 @@ const Behavior = () => {
             <div className='text-center text-sm text-(--secondary-color)'>
               {pronunciationPitch}x
             </div>
-          </div>
+          </div> */}
 
-          <h4 className='text-lg'>Pronunciation voice:</h4>
+          {/* <h4 className='text-lg'>Pronunciation voice:</h4>
           <div className='flex flex-col gap-2'>
             <div className='flex items-center gap-2'>
               <select
@@ -329,7 +329,7 @@ const Behavior = () => {
                   await speak('こんにちは', {
                     rate: pronunciationSpeed,
                     pitch: pronunciationPitch,
-                    volume: 0.8
+                    volume: 0.8,
                   });
                 }}
                 title='Test voice'

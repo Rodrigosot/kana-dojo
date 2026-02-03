@@ -62,7 +62,7 @@ const Fonts = () => {
 
   return (
     <div className='flex flex-col gap-6'>
-      <button
+      {/* <button
         className={clsx(
           'flex w-1/4 items-center justify-center gap-2 p-6',
           buttonBorderStyles,
@@ -83,7 +83,7 @@ const Fonts = () => {
         </span>
         <Dice5 className='text-(--secondary-color)' />
         Random Font
-      </button>
+      </button> */}
 
       {/* Recommended Fonts Section */}
       <CollapsibleSection

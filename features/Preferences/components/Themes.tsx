@@ -101,7 +101,7 @@ const Themes = () => {
 
   return (
     <div className='flex flex-col gap-6'>
-      <div className='flex gap-2'>
+      {/* <div className='flex gap-2'>
         <button
           className={clsx(
             'flex w-full flex-1 items-center justify-center gap-2 overflow-hidden p-6 md:w-1/2',
@@ -139,7 +139,7 @@ const Themes = () => {
           />
           Random Theme
         </button>
-      </div>
+      </div> */}
       {themeSets.map((themeSet, i) => (
         <CollapsibleSection
           key={i}
