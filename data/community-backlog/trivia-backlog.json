@@ -36,7 +36,7 @@
       "October"
     ],
     "correctIndex": 1,
-    "completed": false
+    "completed": true
   },
   {
     "id": 4,
@@ -49,7 +49,7 @@
       "Shodo"
     ],
     "correctIndex": 0,
-    "issued": false
+    "issued": true
   },
   {
     "id": 5,
