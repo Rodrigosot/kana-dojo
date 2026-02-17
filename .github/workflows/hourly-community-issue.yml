@@ -620,7 +620,7 @@ jobs:
               grammar[grammarIndex].issued = true;
               fs.writeFileSync(grammarBacklogPath, JSON.stringify(grammar, null, 2));
               backlogChanged = true;
-              } else {
+              } else if (nextType === 'animeQuote') {
               // Anime Quote
               item = animeQuotes.find(function(q) {
                 if (q.issued || q.completed) {
