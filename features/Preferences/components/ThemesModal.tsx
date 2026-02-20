@@ -164,7 +164,13 @@ export default function ThemesModal({ open, onOpenChange }: ThemesModalProps) {
   useEffect(() => {
     if (open && !isLoaded) {
       import('@/features/Preferences/data/themes').then(module => {
-        setThemeSets(module.default);
+        setThemeSets(
+          // Temporarily hide seasonal groups in the modal.
+          module.default.filter(
+            group =>
+              group.name !== 'Halloween' && group.name !== 'Christmas',
+          ),
+        );
         setIsLoaded(true);
       });
     }
